@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 * {
-
+    padding: 0px 5px;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
+    background-color: #FAFAF9;
 }
 
 body {
@@ -20,15 +21,54 @@ p{
 .logo{
     width: 70px;
 }
+ul{
+    padding-left: 0px;
+    line-height: 2;
+}
 li{
+    
     list-style: none;
+    color: #52525A;
+    display: flex;
+    align-items: center;
     font-size: 0.87rem;
 }
-li::before{
-    content: url(resources/Done_ring_round_fill.svg);
+.nome{
+    font-weight: 600;
+    margin: 10px 0px;
+    background-color: #fff;
 }
+.subtexto{
+    color: #52525A;
+    background-color: #fff;
+}
+li::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(resources/Done_ring_round_fill.svg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 8px;
 
+}
+section{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #fff;
+    height: fit-content;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+img{
+    background-color: #fff;
+}
+footer{
+    background-color: transparent;
+}
 .author-info {
+    background-color: transparent;
     font-size: 14px;
     text-align: center;
     margin-top: 16px;
@@ -37,4 +77,5 @@ li::before{
 
 .author-info a {
     text-decoration: none;
+    background-color: transparent;
 }
